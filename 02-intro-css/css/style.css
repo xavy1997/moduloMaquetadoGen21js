@@ -1,0 +1,62 @@
+/* Selector Universal */ 
+* {
+    color:red;
+}
+
+
+/* Selector por tagname*/
+h2 {
+    color:green;
+}
+
+
+/* Selector por clase*/ 
+.my-color{
+    color:purple;
+}
+
+/* Selector por id*/
+#title-main {
+    color: black;
+    background-color: yellow;
+}
+
+.my-color {
+    font-size: 30px;
+    color: red;
+    
+}
+/*-------------------------------*/
+
+body { 
+    font-size: 50px;
+    font-family: Arial;
+}
+
+.square {
+    background-color: red;
+    width: 200px;
+    height: 200px;
+    color: white;
+     /*shorthand para padding*/
+    
+    padding: 50px 100px;
+
+   
+   
+    border-width: 20px;
+    /* solido, dotted, dashed, double*/
+    
+    border-style:dashed;
+    border-color:purple;
+    box-sizing: content-box
+    }
+
+ /* margin */ 
+   /* margin-top: 50px
+    margin-right:100px
+    margin-bottom: 50px
+    margin-left: 100px
+
+    /* margin: auto*/ 
+    /*margin-left: auto
