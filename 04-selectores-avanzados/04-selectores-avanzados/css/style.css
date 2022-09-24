@@ -1,0 +1,126 @@
+* {
+    box-sizing: border-box;
+    margin:  0;
+}
+
+p {
+    padding: 1px;
+}
+
+.article {
+    border: 1px solid #ccc;
+    max-width: 300px;
+    padding: 10px;
+    border-radius:8px;
+    margin: 20px auto
+
+}
+
+
+/* Selector Combinado*/ 
+
+article.article {
+    background-color: pink;
+
+}
+p.paragraph {
+    color: red;
+}
+
+
+
+/* Selector Descendiente */ 
+
+article.article.p{}
+article.article.footer.article__footer.a{}
+
+
+/* Selector Adyecente , selecciona a el primer hermano inmediato*/ 
+
+article.article + section {
+    background-color: red;
+}
+
+
+/* hermanos inmediatos */ 
+
+article.article ~ section {
+    background-color: purple;
+    color: white;
+}
+
+
+/*hijos directos*/
+
+.article > p {
+    background-color: yellow;
+}
+
+/* Adyacente*/ 
+
+nav.link + section.introduction {
+
+}
+
+
+/* Pesudoclases : 
+:hover -> cuando pasas el cursos por un elemento
+:link -> enlace aun no ha sido visitado
+: visited -> cuando ya ha sido visitado
+:focus
+:active
+:disabled
+:checked -> radio buttons, checkbox
+:disabled ->
+:submit 
+
+*/ 
+
+
+a:link{
+    color: red;
+}
+a:visited{
+    color: green;
+}
+
+.square {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+
+}
+
+.square:hover + .circle{
+    background-color: yellow;
+}
+
+.circle{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: tomato;
+    display: none;
+}
+
+
+
+
+
+/* 
+
+
+:first-child
+:last-child
+:nth-child()
+
+:first-of-type
+:last-of-type
+:nth-of-type()
+
+:not()
+
+
+
+
+*/
